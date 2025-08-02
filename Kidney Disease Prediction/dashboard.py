@@ -19,8 +19,7 @@ st.set_page_config(page_title="Kidney Disease Prediction Dashboard", layout="wid
 st.title("Kidney Disease Prediction Dashboard")
 
 #Load the dataset
-data_kidney =pd.read_csv('kidney_disease_dataset.csv')
-
+data_kidney = pd.read_csv('kidney_disease_dataset.csv', encoding='utf-8')
 st.subheader("Kidney Disease Dataset Overview")
 
 st.write("This dataset contains information about patients with kidney disease. The features include various medical attributes and the target variable indicates whether the patient has kidney disease.")
