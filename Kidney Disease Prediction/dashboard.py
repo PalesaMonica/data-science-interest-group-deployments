@@ -20,6 +20,7 @@ st.title("Kidney Disease Prediction Dashboard")
 # Load the dataset with error handling
 def load_data():
     try:
+        st.markdown("**[Click here to download the dataset](https://www.kaggle.com/datasets/miadul/kidney-disease-risk-dataset/data)**")
         uploaded_file = st.file_uploader("Upload kidney_disease_dataset.csv", type=["csv"])
         data = pd.read_csv(uploaded_file) if uploaded_file else pd.read_csv("kidney_disease_dataset.csv")
         return data
